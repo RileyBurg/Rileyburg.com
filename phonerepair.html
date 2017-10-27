@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<title>Riley's Repair</title>
+</head>
+<body class="phonerepair">
+	<form action="repairSubmit.php" method="post">
+	<h1>Riley's Repair</h1>
+		<div>
+			<label for="Date"> Date: </label>
+			<input type="date" value="<?php echo date('Y-m-d'); ?>"id="Date" name="inDate"/>
+		</div>
+		<div>
+			<label for = "FullName"> Full Name: </label>
+			<input id="fName" name="fullName" />
+		</div>
+
+		<div>
+			<label for = "phoneModel"> Phone Model: </label>
+			<input list="phoneModel" name="employName"/>
+				<datalist id="phoneModel">
+					<option>iPhone 5</option>
+					<option>iPhone 6</option>
+					<option>iPhone 6 Plus</option>
+					<option>iPhone 6s</option>
+					<option>iPhone 6s Plus</option>
+					<option>iPhone 7</option>
+					<option>iPhone 7 Plus</option>
+				</datalist>
+		</div>
+		
+		<div>
+			<label for="typicalFixes"> Typical Fixes: </label>
+			<input list="fixType" type="text" name="Class" />
+				<datalist id = "fixType">
+					<option>Screen/Digitizer</option>
+					<option>Front Camera</option>
+					<option>Back Camera</option>
+					<option>Home Button</option>
+					<option>Battery</option>
+					<option>Other</option>
+				</datalist>
+		</div>
+
+		<div>
+			<label for = "notes"> Other Problem: </label>
+			<input type="text" id="notes" name="notes">
+		</div>	
+			<input type="submit"/>	
+		<p>Contact: rileyburg@yahoo.com 	Phone: (408) 825-3678</p>	
+	</form>
+</body>
+</html>

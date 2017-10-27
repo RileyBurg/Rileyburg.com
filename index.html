@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<TITLE>Riley Burg</TITLE>
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function()
+	{
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) 
+	  {	
+	    if (this.hash !== "") 
+	    {
+	      event.preventDefault();
+	
+	      var hash = this.hash;
+
+	      $('html, body').animate(
+	      {
+	        scrollTop: $(hash).offset().top
+	      }, 600, function()
+	      {
+	        window.location.hash = hash;
+	      });
+	    } 
+	  });
+	});
+</script>
+</head>
+	
+<body class="index">
+<div id="top" class="head">
+	<div class="nav">
+		<ul>
+			<li><a id="bot" href="#bottom"> Services </a></li>
+			<li><a id="mid" href="#middle"> About </a></li>
+			<li><a id="top" href="#top"> Home </a></li>
+		</ul>
+	</div>
+	<h1>Riley Burg</h1>
+	<h2>Web Designer</h2>
+</div>		
+<div id="middle">
+	
+</div>
+<div class="body">
+	<h1> About </h1>
+	<div id="rectangle">
+		<p class="abText">
+			Welcome to my website. I've developed this page to provide a clean and
+			graphically aesthitic way to showcase my current skills and services. 
+			If you would like to view my resume click the button!
+		</p>
+		<button id="resButton" class="resume" href="RileysResume.html">Resume</button>
+		
+		<div id="myModal" class="modal">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<span class="close">&times;</span>
+  					<h2>Resume</h2>
+  				</div>
+  				<div id="modal-body" class="modal-body">
+  					
+  					<p>	Riley Burg</p>      
+					<p>	Email: rileyburg@yahoo.com</p>
+					<p>	Phone: (408) 825-3678</p>
+					<p>	DOB: 5/21/1997</p>
+					<p>	OBJECTIVE</p>
+					<p class="indent">	To work for an organization, in a highly motivating and challenging 						environment, that provides the best opportunities to grow and utilize 						my potential to the fullest, allowing me to achieve the organization's 						goal while achieving my own personal goals.</p>
+						 
+					<p>	TECHNICAL QUALIFICATIONS</p>
+					<p class="indent">	- 1+ year working with web dev for CHReynolds</p>
+					<p class="indent">	- Java basics completed at San Jose State University</p>
+					<p class="indent">	- Experience with Microsoft Office such as Excel, Word, PowerPoint and 						Access</p>
+					<p class="indent">	- HTML/CSS class completed at Gavilan Community College</p>
+					<p>	CURRENT HOBBIES / INTERESTS</p>
+					<p class="indent">	- Building efficient and modern websites</p>
+					<p class="indent">	- HTML 5, CSS, Javascript, PHP</p>
+					<p class="indent">	- IT support for friends and family</p>
+					<p class="indent">	- Video softwares, uploading, editing, and recording</p>
+					<p>	EDUCATION</p>
+					<p class="indent">	- Currently enrolled at School 42  (Fremont Location)</p>
+					<p class="indent">	- San Jose State University with (2) completed years</p>
+					<p class="indent">	- Gavilan college HTML/CSS course</p>
+					<p class="indent">	- Safety classes (official member of CERT)</p>
+					<p>	IT Support Administration| 2017 - 2018</p>
+					<p>	CHReynolds Electric</p>
+					<p class="indent">		- Project based web app development using HTML,CSS, Javascript, and PHP</p>
+					<p class="indent">	- Physical and software related repairs for computers and phones</p>
+					<p class="indent">	- One on one technical support with employees for the current system</p>
+					<p>	Electrical Estimator| 2016 - 2017</p>
+					<p>	CHReynolds Electric</p>
+					<p class="indent">	      - Standard plan take-offs working with accubid to provide job 						cost estimates</p>
+					<p>	CONTACTS</p>
+					<p class="indent">	      Deanna Rose: IT Professional</p>
+					<p class="indent">      Phone Number: (859) 420-7482</p>
+  					
+  				</div>
+  				<div class="modal-footer">
+  				</div>
+			</div>
+		</div>
+
+		<div id="bulletpts">
+			
+		</div>
+
+		<script type="text/javascript">
+			var modal = document.getElementById('myModal');
+			var btn = document.getElementById("resButton");
+			var span = document.getElementsByClassName("close")[0];
+			
+			btn.onclick = function() 
+			{
+			    modal.style.display = "block";
+			}
+
+			span.onclick = function() 
+			{
+			    modal.style.display = "none";
+			}
+			
+			window.onclick = function(event) 
+			{
+			    if (event.target == modal) 
+			    {
+			        modal.style.display = "none";
+    			}
+			}
+		</script>
+	</div>
+<div id="bottom">
+	
+</div>
+<div class="end">
+	<h1>Services</h1>
+	
+	<div onclick="window.location.href='phonerepair.php';" class="tile" id="firstTile">
+		<img src="phonerepair.jpg" alt="Phone Repair">
+	</div>
+	<div onclick="window.location.href='webdesign.html';" class="tile">
+		<img src="webdesign.jpg" alt="Web Design">
+	</div>
+	<div onclick="window.location.href='itsupport.html';" class="tile">
+		<img src="itsupport.png" alt="IT Support">
+	</div>
+	<div onclick="window.location.href='https://www.instagram.com/rileyburgphotography/?hl=en';" class="tile" id="lastTile">
+		<img src="photography.jpg" alt="Photography">
+	</div>
+	<label class="tileLabel" for="phonerepair">Phone Repair</label>
+	<label class="tileLabel" for="webdesign">Web Design</label>
+	<label class="tileLabel" for="itsupport">IT Support</label>
+	<label class="tileLabel" for="photography">Photography</label>
+</div>
+
+</body>
+</html>
