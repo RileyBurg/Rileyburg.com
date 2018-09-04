@@ -1,2 +1,3 @@
 # Rileyburg.com
-This is my personal website ive been working on a bit. In the process of completion.
+Took the site down. 
+May republish when it becomes more beneficial to pay for the domain.
